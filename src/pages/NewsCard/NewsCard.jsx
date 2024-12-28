@@ -18,7 +18,7 @@ const NewsCard = ({news}) => {
 		<h2 className="mb-1 text-xl font-semibold">{title}</h2>
 		<div className="text-sm text-gray-400">
             
-            {details.length>400?<p>{details.slice(0,400)} <Link to={`/news/${_id}`} className='text-blue-600 font-bold' >see more...</Link></p>:<p>{details}</p>}
+            {details.length>400?<p>{details.slice(0,400)} <Link to={`/news/${_id}`} className='text-blue-600 font-bold' >see more...</Link> <br /> <span className='text-red-200 font-bold'>Please, SignIn to see more</span> </p>:<p>{details}</p>}
             </div>
 	</div>
 	<div className="flex flex-wrap justify-between">

@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Navbar from "../navbar/Navbar";
  
 const LogIn = () => {
+  const [errorMsg,setErrorMsg]=useState('');
   const location=useLocation();
   console.log(location)
   const navigate=useNavigate()
@@ -20,7 +21,9 @@ const LogIn = () => {
      
       
     })
-    .catch(err=>console.log(err))
+    .catch(err=>{
+      setErrorMsg('Your Information Is incorrect.!!!!! please try again')
+    })
    }
   return (
     
@@ -60,6 +63,12 @@ const LogIn = () => {
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Login</button>
+          </div>
+          <div>
+            {
+              errorMsg&&<h2 className="text-red-700 text-center">{errorMsg}</h2>
+            }
+       
           </div>
         </form>
         <p className="text-center mt-3">Don't have an account ? please <Link to="/register" className="text-blue-500 font-bold">Register</Link></p>

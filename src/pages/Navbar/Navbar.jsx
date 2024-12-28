@@ -18,10 +18,10 @@ const Navbar = () => {
             <NavLink className={({ isActive }) => (isActive ? 'text-rose-700' : 'text-[#706F6F]')}  to='/'>Home</NavLink>
         </li>
         <li className=' text-xl'>
-            <NavLink className={({ isActive }) => (isActive ? 'text-rose-700' : 'text-[#706F6F]')}   to='/about'>About</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'text-rose-700' : 'text-[#706F6F]')}   to='#'>About</NavLink>
         </li>
         <li className=' text-xl'>
-            <NavLink className={({ isActive }) => (isActive ? 'text-rose-700' : 'text-[#706F6F]')}  to='/career'>Career</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'text-rose-700' : 'text-[#706F6F]')}  to='#'>Career</NavLink>
         </li>
       
       
