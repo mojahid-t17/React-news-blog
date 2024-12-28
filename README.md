@@ -26,9 +26,9 @@ This project is a responsive web application built with **Tailwind CSS**, **Dais
    - Clicking **Read More** redirects to the login page if the user is not logged in. After login, the user is redirected to the **Details Page**.
 
 ## Live Site:
+-[click here](https://blog-auth-74f09.web.app/)
 
 
-1. Clone the repository:
  
 
 Currently, two official plugins are available:
