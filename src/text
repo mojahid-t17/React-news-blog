@@ -1,0 +1,9 @@
+1. create Home page with Header,Navbar, Left and Right navbar 
+2. In the header Use a text  slider by using react marquee
+3. Set Real time by using react moment js
+4. different way to collect the form value
+5. Signup,signin with email and password by using firebase authentication.
+6. Display the LogOUt button after login otherwise display LogIn btn in the home page
+7. display news card in the home page. display only 400 letter in the news details .
+   when click in the read more then redirect the login page if the user doesn't login. 
+   after login rederect the details page
